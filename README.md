@@ -1,11 +1,38 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Prueba técnica Enviame.io por AJ
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Requisitos
+Se deben cumplir con los siguientes requisitos para poder correr correctamente el proyecto
+
+-Docker
+    Instalación [Docker Desktop](https://docs.docker.com/desktop/)
+-Docker compose (En Windows y en Mac viene incluido en la suite Docker Desktop)
+    Instalación [Docker Compose](https://docs.docker.com/compose/install/) 
+
+## Instalación
+
+Se debe copiar el archivo .env.example y crear un archivo .env (cp .env.example .env), luego se debe editar el archivo .env y colocar los accesos a la BD (nano .env) 
+
+    APP_NAME=Enviame
+    APP_ENV=local
+    APP_KEY=
+    APP_DEBUG=true
+    APP_URL=http://localhost
+
+    LOG_CHANNEL=stack
+    LOG_LEVEL=debug
+
+    DB_CONNECTION=mysql
+    DB_HOST=db
+    DB_PORT=3306
+    DB_DATABASE=enviame
+    DB_USERNAME=enviame_user
+    DB_PASSWORD=password
+
+---
+
+Se debe correr el 
+
+docker-compose exec app composer install
 
 ## About Laravel
 
